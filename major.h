@@ -2,7 +2,7 @@
 #define MAJOR_H
 #include <stdio.h>
 
-// Function prototype for endian swap
+// Function prototype for endian swap vicky crated this unsigned int
 unsigned int endian_swap(unsigned int x);
 
 // Placeholder for Count Leading Zeroes
