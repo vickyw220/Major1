@@ -1,7 +1,5 @@
 #ifndef MAJOR_H
 #define MAJOR_H
-
-// Include standard headers
 #include <stdio.h>
 
 // Function prototype for endian swap
