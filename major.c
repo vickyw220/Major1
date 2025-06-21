@@ -14,7 +14,18 @@ int main() {
         scanf("%d", &option);
 
         if (option == 1) {
-            // clz.c section 
+        int count_leading_zeros(unsigned int x) {
+        int count = 0;
+        for (int i = 31; i >= 0; --i) {
+        if ((x >> i) & 1) {
+            break;
+        }
+        count++;
+        }
+        return count;
+            // clz.c section - Muhammud
+}
+
 
         }
         else if (option == 2) {
