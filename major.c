@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "major1.h"
-
+#include "major.h"
+//vicky created the display menu and main function
 int main() {
     int option;
-    unsigned int input, rotate_amount, result;
+    unsigned int input, result; //,rotate_amount,result;
 
     do {
         printf("Enter the menu option for the operation to perform:\n");
@@ -18,7 +18,7 @@ int main() {
 
         }
         else if (option == 2) {
-            // endian.c section 
+            // endian.c section -vicky
             printf("\n");
 
             do {
