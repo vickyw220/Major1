@@ -14,11 +14,11 @@ int main() {
         scanf("%d", &option);
 
         if (option == 1) {
-            // --- clz.c section ---
+            // clz.c section 
 
         }
         else if (option == 2) {
-            // --- endian.c section ---
+            // endian.c section 
             printf("\n");
 
             do {
