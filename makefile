@@ -18,4 +18,4 @@ rotate.o: rotate.c major1.h
 	$(CC) $(CFLAGS) -c rotate.c
 
 //command to  compile: gcc -Wall -o bitwisemenu major.c endian.c clz.c rotate.c
- //command to run: ./bitwisemenu
+//command to run: ./bitwisemenus
