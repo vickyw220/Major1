@@ -1,4 +1,4 @@
-// major.c - Menu-driven bitwise operations
+// major.c - Menu diven program
 #include <stdio.h>
 #include "major.h"
 
