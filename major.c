@@ -1,9 +1,10 @@
+// major.c - Menu-driven bitwise operations
 #include <stdio.h>
 #include "major.h"
-//vicky created the display menu and main function
+
 int main() {
     int option;
-    unsigned int input, result; //,rotate_amount,result;
+    unsigned int input, result, rotate_amount;
 
     do {
         printf("Enter the menu option for the operation to perform:\n");
@@ -14,43 +15,48 @@ int main() {
         scanf("%d", &option);
 
         if (option == 1) {
-        int count_leading_zeros(unsigned int x) {
-        int count = 0;
-        for (int i = 31; i >= 0; --i) {
-        if ((x >> i) & 1) {
-            break;
-        }
-        count++;
-        }
-        return count;
-            // clz.c section - Muhammud
-}
+            // clz.c section
+            do {
+                printf("Enter a 32-bit number (>= 1 and <= 4294967295, inclusively): ");
+                scanf("%u", &input);
+            } while (input < 1);
 
-
+            result = count_leading_zeros(input);
+            printf("The number of leading zeroes in %u is %u\n", input, result);
+            printf("\n");
         }
         else if (option == 2) {
-            // endian.c section -vicky
-            printf("\n");
-
+            // endian.c section
             do {
-                printf("Enter a 32-bit number from no less tham 1 and no greater than 4294967295: ");
+                printf("Enter a 32-bit number (>= 1 and <= 4294967295, inclusively): ");
                 scanf("%u", &input);
             } while (input < 1);
 
             result = endian_swap(input);
             printf("Endian swap of %u gives %u\n", input, result);
-
             printf("\n");
         }
         else if (option == 3) {
-            // rotate.c section 
+            // rotate.c section
+            do {
+                printf("Enter a 32-bit number (>= 1 and <= 4294967295, inclusively): ");
+                scanf("%u", &input);
+            } while (input < 1);
 
+            do {
+                printf("Enter the number of positions to rotate-right the input (between 0 and 31, inclusively): ");
+                scanf("%u", &rotate_amount);
+            } while (rotate_amount > 31);
+
+            result = rotate_right(input, rotate_amount);
+            printf("%u rotated by %u position(s) gives: %u\n", input, rotate_amount, result);
+            printf("\n");
         }
         else if (option == 4) {
             printf("Program Has Ended.\n");
         }
         else {
-            printf("Error has occured : Invalid option. Please try again.\n");
+            printf("Error has occurred: Invalid option. Please try again.\n\n");
         }
 
     } while (option != 4);
