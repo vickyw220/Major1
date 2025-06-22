@@ -4,7 +4,7 @@ CSCE 3600 – Major Assignment 1: Bitwise Operations
 - Muhammud Elsell** – Responsible for `clz.c` (Count Leading Zeroes)
 - Emmanuel Moonga** – Responsible for `rotate.c` (Rotate Right)
 - Vicky Wainaina** – Responsible for `endian.c` (Endian Swap)
-- Dustin Dowell** – Responsible for `parity.c` (Endian Swap)
+- Dustin Dowell** – Responsible for `parity.c` (Integer Parity)
 
 ---
 
