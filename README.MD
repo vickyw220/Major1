@@ -23,5 +23,3 @@ Known Bugs or Problems
 - Merging issues: We encountered difficulties combining the independently written functions into a single, functioning major1.c program. These were resolved with extra communication and code reviews.
 - Communication gaps: Minor delays and misunderstandings occurred while coordinating which files needed updates at different times.
 - No critical bugs remain, but testing was limited to basic cases due to technical issues.
-- There was one group member that did not communicate/respond or participate to the project.(Dustin Dowell)
-
