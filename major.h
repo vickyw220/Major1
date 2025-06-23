@@ -5,5 +5,6 @@
 unsigned int endian_swap(unsigned int x);
 int count_leading_zeros(unsigned int x);
 unsigned int rotate_right(unsigned int x, unsigned int amount);  
+int bit_parity(unsigned int x);
 
 #endif
