@@ -11,7 +11,8 @@ int main() {
         printf("(1) Count Leading Zeroes\n");
         printf("(2) Endian Swap\n");
         printf("(3) Rotate-right\n");
-        printf("(4) EXIT\n");
+        printf("(4) Parity\n");
+        printf("(5) EXIT\n");
         scanf("%d", &option);
 
         if (option == 1) {
@@ -52,14 +53,25 @@ int main() {
             printf("%u rotated by %u position(s) gives: %u\n", input, rotate_amount, result);
             printf("\n");
         }
-        else if (option == 4) {
+        if (option == 4) {
+            // parity.c section
+            do {
+                printf("Enter a 32-bit number (>= 1 and <= 4294967295, inclusively): ");
+                scanf("%u", &input);
+            } while (input < 1);
+
+            result = bit_parity(input);
+            printf("The Parity of the Integer is: \n", input,result);
+            printf("\n");
+        }
+        else if (option == 5) {
             printf("Program Has Ended.\n");
         }
         else {
             printf("Error has occurred: Invalid option. Please try again.\n\n");
         }
 
-    } while (option != 4);
+    } while (option != 5);
 
     return 0;
 }
