@@ -53,7 +53,7 @@ int main() {
             printf("%u rotated by %u position(s) gives: %u\n", input, rotate_amount, result);
             printf("\n");
         }
-        if (option == 4) {
+        else if (option == 4) {
             // parity.c section
             do {
                 printf("Enter a 32-bit number (>= 1 and <= 4294967295, inclusively): ");
