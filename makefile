@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall
-OBJS = major.o endian.o clz.o rotate.o
+OBJS = major.o endian.o clz.o rotate.o parity.o
 
 bitwisemenu: $(OBJS)
 	$(CC) $(CFLAGS) -o bitwisemenu $(OBJS)
@@ -17,5 +17,8 @@ clz.o: clz.c major1.h
 rotate.o: rotate.c major1.h
 	$(CC) $(CFLAGS) -c rotate.c
 
-//command to  compile: gcc -Wall -o bitwisemenu major.c endian.c clz.c rotate.c
+parity.o: parity.c major1.h
+	$(CC) $(CFLAGS) -c parity.c
+
+//command to  compile: gcc -Wall -o bitwisemenu major.c endian.c clz.c rotate.c parity.c
 //command to run: ./bitwisemenus
