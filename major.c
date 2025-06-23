@@ -61,8 +61,12 @@ int main() {
             } while (input < 1);
 
             result = bit_parity(input);
-            printf("The Parity of the Integer is: \n", input, result);
-            printf("\n");
+            if (result == 0) {
+                printf("The Integer provided has an Even Parity\n")
+            }
+            else {
+                printf("The Integer provided has an Odd Parity\n")
+            }
         }
         else if (option == 5) {
             printf("Program Has Ended.\n");
