@@ -1,5 +1,5 @@
+//Bit Parity -Dustin Dowell
 #include "major.h"
-//Dustin Dowell Parity int
 int bit_parity(unsigned int x) {
   int Pari=0;
   while (x) {
