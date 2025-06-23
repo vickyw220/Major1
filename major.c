@@ -61,7 +61,7 @@ int main() {
             } while (input < 1);
 
             result = bit_parity(input);
-            printf("The Parity of the Integer is: \n", input,result);
+            printf("The Parity of the Integer is: \n", input, result);
             printf("\n");
         }
         else if (option == 5) {
