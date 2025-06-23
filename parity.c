@@ -1,10 +1,10 @@
 #include "major.h"
 //Dustin Dowell Parity int
-int Bit_Parity(unsigned int X) {
+int bit_parity(unsigned int x) {
   int Pari=0;
-  while (X) {
-    Pari ^= (X & 1);
-    X >>= 1;
+  while (x) {
+    Pari ^= (x & 1);
+    x >>= 1;
   }
   return Pari;
 }
