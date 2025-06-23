@@ -62,10 +62,10 @@ int main() {
 
             result = bit_parity(input);
             if (result == 0) {
-                printf("The Integer provided has an Even Parity\n")
+                printf("The Integer provided has an Even Parity\n");
             }
             else {
-                printf("The Integer provided has an Odd Parity\n")
+                printf("The Integer provided has an Odd Parity\n");
             }
         }
         else if (option == 5) {
