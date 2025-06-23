@@ -1,4 +1,4 @@
-//Count Leading Zeros made by Vicky
+//Count Leading Zeros -Vicky
 #include "major.h" 
 int count_leading_zeros(unsigned int x) {
     int count = 0;
